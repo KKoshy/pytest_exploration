@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="5" time="4.213" timestamp="2021-05-30T17:25:16.451407" hostname="CHN-REN-KAMALI"><testcase classname="test_parametrize_ids.TestFrontMotorSpeed" name="test_speed_limit_front_motor[state1]" time="1.400"><failure message="AssertionError: Speed exceeds rated speed&#10;assert 6815.949 &lt; 6100">self = &lt;Pytest_docs.test_parametrize_ids.TestFrontMotorSpeed object at 0x0000023FE5747F10&gt;, frequency = 233, slip = 2.49, pole = 4
+
+    @pytest.mark.parametrize("slip, frequency", slip_frequency_values, ids=['state1', 'state2', 'state3', 'state4',
+                                                                            'state5'])
+    def test_speed_limit_front_motor(self, frequency, slip, pole=4):
+        slip_factor = (1 - slip / 100)
+        pytest.set_trace()
+&gt;       sync_speed = 120 * frequency * slip_factor / pole
+E       AssertionError: Speed exceeds rated speed
+E       assert 6815.949 &lt; 6100
+
+test_parametrize_ids.py:18: AssertionError</failure></testcase><testcase classname="test_parametrize_ids.TestFrontMotorSpeed" name="test_speed_limit_front_motor[state2]" time="0.784"><failure message="AssertionError: Speed exceeds rated speed&#10;assert 6758.16 &lt; 6100">self = &lt;Pytest_docs.test_parametrize_ids.TestFrontMotorSpeed object at 0x0000023FE57748B0&gt;, frequency = 232, slip = 2.9, pole = 4
+
+    @pytest.mark.parametrize("slip, frequency", slip_frequency_values, ids=['state1', 'state2', 'state3', 'state4',
+                                                                            'state5'])
+    def test_speed_limit_front_motor(self, frequency, slip, pole=4):
+        slip_factor = (1 - slip / 100)
+        pytest.set_trace()
+&gt;       sync_speed = 120 * frequency * slip_factor / pole
+E       AssertionError: Speed exceeds rated speed
+E       assert 6758.16 &lt; 6100
+
+test_parametrize_ids.py:18: AssertionError</failure></testcase><testcase classname="test_parametrize_ids.TestFrontMotorSpeed" name="test_speed_limit_front_motor[state3]" time="0.639"><failure message="AssertionError: Speed exceeds rated speed&#10;assert 6147.696 &lt; 6100">self = &lt;Pytest_docs.test_parametrize_ids.TestFrontMotorSpeed object at 0x0000023FE57994F0&gt;, frequency = 211, slip = 2.88, pole = 4
+
+    @pytest.mark.parametrize("slip, frequency", slip_frequency_values, ids=['state1', 'state2', 'state3', 'state4',
+                                                                            'state5'])
+    def test_speed_limit_front_motor(self, frequency, slip, pole=4):
+        slip_factor = (1 - slip / 100)
+        pytest.set_trace()
+&gt;       sync_speed = 120 * frequency * slip_factor / pole
+E       AssertionError: Speed exceeds rated speed
+E       assert 6147.696 &lt; 6100
+
+test_parametrize_ids.py:18: AssertionError</failure></testcase><testcase classname="test_parametrize_ids.TestFrontMotorSpeed" name="test_speed_limit_front_motor[state4]" time="0.677" /><testcase classname="test_parametrize_ids.TestFrontMotorSpeed" name="test_speed_limit_front_motor[state5]" time="0.608"><failure message="AssertionError: Speed exceeds rated speed&#10;assert 6468.192 &lt; 6100">self = &lt;Pytest_docs.test_parametrize_ids.TestFrontMotorSpeed object at 0x0000023FE57AFA60&gt;, frequency = 222, slip = 2.88, pole = 4
+
+    @pytest.mark.parametrize("slip, frequency", slip_frequency_values, ids=['state1', 'state2', 'state3', 'state4',
+                                                                            'state5'])
+    def test_speed_limit_front_motor(self, frequency, slip, pole=4):
+        slip_factor = (1 - slip / 100)
+        pytest.set_trace()
+&gt;       sync_speed = 120 * frequency * slip_factor / pole
+E       AssertionError: Speed exceeds rated speed
+E       assert 6468.192 &lt; 6100
+
+test_parametrize_ids.py:18: AssertionError</failure></testcase></testsuite></testsuites>
